@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p.log-factorial::before {
+      content: 'Silnia podanej liczby wynosi: ';
+    }
+
+    p.log-levels::before {
+      content: 'Maksymalna ilość stron, na które wystarczy tuszu: ';
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Zadanie 7.</h1>    
+      <label>Podaj liczbę całkowitą nieujemną.</label>
+      <br>
+      <input type="number" class="to-factorial" min="0">
+      <br>    
+    <p class="log-factorial"></p>
+  </div>
+
+
+  <div>
+    <h1>Zadanie 8.</h1>
+      <label>Wybierz drukarkę, której poziom atramentu chcesz sprawdzić.</label>
+      <br>
+      <button class="printer-1">Drukarka 1.</button>      
+      <button class="printer-2">Drukarka 2.</button>      
+      <button class="printer-3">Drukarka 3.</button>
+      <br>
+    <p class="log-levels"></p>
+  </div>
+
+  <div>
+    <h1>Zadanie 9.</h1>
+    <label>Podaj wartość pH.</label>
+    <br>
+    <input type="number" class="pH" placeholder="pH" min="0" max="14">
+    <p class="log-pH-text"></p>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
